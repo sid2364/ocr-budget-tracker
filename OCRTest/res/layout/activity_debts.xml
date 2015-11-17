@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Debts" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView5"
+        android:ems="10"
+        android:hint="Enter the amount!"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Who is it?"
+        android:inputType="textPersonName" />
+	<RadioGroup
+        android:id="@+id/radioDebt"
+        android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:weightSum="1"
+         android:layout_below="@+id/editText2">
+        
+    <RadioButton
+        android:id="@+id/radioButtonPLUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/radioButtonMINUS"
+        android:checked="true"
+        android:text="This person owes me" />
+    
+    <RadioButton
+        android:id="@+id/radioButtonMINUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioButtonPLUS"
+        android:layout_centerVertical="true"
+        android:text="I owe this person" />
+</RadioGroup>
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="70dp"
+        android:text="Add a debt:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You owe people:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23dp"
+        android:text="Main Menu"
+        android:onClick="goToMainMenu"
+		android:background="@drawable/buttonshape"
+		style="@style/ButtonText"
+        android:shadowColor="#242424"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:width="140dp" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioDebt"
+        android:background="@drawable/buttonshape"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:onClick="addDebt"
+        style="@style/ButtonText"
+        android:shadowColor="#242424"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:text="Add Debt" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:text="View All Debts"
+        android:onClick="showDebts"
+		style="@style/ButtonText"
+        android:shadowColor="#242424"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:background="@drawable/buttonshape"
+        android:shadowRadius="2"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:width="140dp" />
+
+    <TextView
+        android:id="@+id/textViewIOwe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:text="Rs."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:width="120dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="18dp"
+        android:text="People owe you:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewOweMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/textViewIOwe"
+        android:text="Rs. "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:width="120dp" />
+
+</RelativeLayout>

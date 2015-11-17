@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HomePage" >
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAmount"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/categories"
+        android:prompt="@string/categoryexpense" />
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Enter an expense here!"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/ButtonGoToOCR"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonAddExpense2"
+        android:layout_below="@+id/buttonViewExpenses"
+        android:background="@drawable/buttonshape"
+        android:onClick="goToOCR"
+        android:shadowColor="#242424"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:text="Take a picture"
+        android:width="180dp" />
+
+    <Button
+        android:id="@+id/ButtonViewOwe"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonAddExpense2"
+        android:layout_below="@+id/ButtonGoToOCR"
+        android:background="@drawable/buttonshape"
+        android:onClick="goToDebts"
+        android:shadowColor="#242424"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Debts"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:width="180dp" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonAddExpense2"
+        android:layout_below="@+id/ButtonViewOwe"
+        android:background="@drawable/buttonshape"
+        android:onClick="goToSettings"
+        android:shadowColor="#242424"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Go to Settings"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:width="180dp" />
+
+    <Button
+        android:id="@+id/buttonViewExpenses"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonAddExpense2"
+        android:layout_below="@+id/labelBudget"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#242424"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="View All Expenses"
+        android:textColor="#FFFFFF"
+        android:onClick="viewExpenses"
+        android:textSize="15sp"
+        android:width="180dp" />
+
+    <TextView
+        android:id="@+id/TextViewLabelBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelMoney"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Balance money since:" />
+
+    <TextView
+        android:id="@+id/labelMoney"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerCategory"
+        android:layout_alignRight="@+id/spinnerCategory"
+        android:layout_below="@+id/textViewLabelTotalMoney"
+        android:gravity="center"
+        android:text="Rs. "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/labelBudget"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelMoney"
+        android:layout_alignRight="@+id/labelMoney"
+        android:layout_below="@+id/TextViewLabelBudget"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="Rs. "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonAddExpense2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerCategory"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:onClick="addExpenseHome"
+        android:shadowColor="#242424"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:layout_marginBottom="10dp"
+        android:text="Add New Expense"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:width="180dp" />
+
+    <TextView
+        android:id="@+id/textViewLabelTotalMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonAddExpense2"
+        android:layout_centerHorizontal="true"
+        android:text="Total expenditure:" />
+
+</RelativeLayout>

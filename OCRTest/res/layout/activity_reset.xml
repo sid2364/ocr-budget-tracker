@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ResetActivity" >
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Start Date: " android:layout_marginTop="40dp" android:layout_below="@+id/textViewLblStartDate" android:layout_alignLeft="@+id/textViewLblStartDate" android:id="@+id/textViewLblAmt"/>
+
+
+<EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/editText1" android:inputType="number" android:ems="10" android:layout_toRightOf="@+id/textViewLblStartDate" android:layout_marginLeft="16dp" android:layout_alignBottom="@+id/textViewLblStartDate" android:layout_alignBaseline="@+id/textViewLblStartDate">
+
+<requestFocus/>
+
+</EditText>
+
+<EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignLeft="@+id/editText1" android:id="@+id/editText2" android:inputType="date" android:ems="10" android:layout_alignBottom="@+id/textViewLblAmt" android:focusableInTouchMode="false"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Budget Amount:" android:layout_marginTop="154dp" android:id="@+id/textViewLblStartDate" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"/>
+
+<Button
+    android:id="@+id/buttonAddNewBudget"
+    style="@style/ButtonText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textViewLblAmt"
+    android:layout_alignRight="@+id/editText2"
+    android:layout_below="@+id/textViewLblAmt"
+    android:layout_marginTop="53dp"
+    android:onClick="addNewBudget"
+    android:background="@drawable/buttonshape"
+	    android:shadowColor="#242424"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textColor="#FFFFFF"
+        
+    android:text="Start New Budget" />
+
+</RelativeLayout>

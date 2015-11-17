@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2010 ZXing authors
+ Copyright 2011 Robert Theis
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources>
+
+    <string name="app_name">OCR Test</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="title_activity_home_page_user">HomePageUser</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="categoryexpense">Category of Expense</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string-array name="categories">
+        <item>Miscellaneous</item>
+        <item>Food</item>
+        <item>Home</item>
+        <item>Entertainment</item>
+        <item>Electronics</item>
+        <item>Health</item>
+    </string-array>
+
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_reset">ResetActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <string name="title_activity_debts">Debts</string>
+    <string name="title_activity_show_debts">ShowDebts</string>
+    <string name="title_activity_view_expenses">ViewExpenses</string>
+
+</resources>

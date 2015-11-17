@@ -1,0 +1,73 @@
+# view AndroidManifest.xml #generated:91
+-keep class edu.sfsu.cs.orange.ocr.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class edu.sfsu.cs.orange.ocr.CaptureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class edu.sfsu.cs.orange.ocr.Debts { <init>(...); }
+
+# view AndroidManifest.xml #generated:67
+-keep class edu.sfsu.cs.orange.ocr.HelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class edu.sfsu.cs.orange.ocr.HomePage { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class edu.sfsu.cs.orange.ocr.PreferencesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class edu.sfsu.cs.orange.ocr.ResetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class edu.sfsu.cs.orange.ocr.SettingsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class edu.sfsu.cs.orange.ocr.ShowDebts { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class edu.sfsu.cs.orange.ocr.ViewExpenses { <init>(...); }
+
+# view res/layout/capture.xml #generated:27
+-keep class edu.sfsu.cs.orange.ocr.ViewfinderView { <init>(...); }
+
+# view res/layout/capture.xml #generated:203
+-keep class edu.sfsu.cs.orange.ocr.camera.ShutterButton { <init>(...); }
+
+# onClick res/layout/activity_debts.xml #generated:98
+-keepclassmembers class * { *** addDebt(...); }
+
+# onClick res/layout/capture.xml #generated:136
+-keepclassmembers class * { *** addExpense(...); }
+
+# onClick res/layout/activity_home_page.xml #generated:136
+-keepclassmembers class * { *** addExpenseHome(...); }
+
+# onClick res/layout/activity_reset.xml #generated:26
+-keepclassmembers class * { *** addNewBudget(...); }
+
+# onClick res/layout/activity_show_debts.xml #generated:49
+-keepclassmembers class * { *** deleteDebt(...); }
+
+# onClick res/layout/activity_home_page.xml #generated:50
+# onClick res/layout/activity_show_debts.xml #generated:31
+-keepclassmembers class * { *** goToDebts(...); }
+
+# onClick res/layout/activity_debts.xml #generated:79
+-keepclassmembers class * { *** goToMainMenu(...); }
+
+# onClick res/layout/capture.xml #generated:245
+-keepclassmembers class * { *** goToMenu(...); }
+
+# onClick res/layout/activity_home_page.xml #generated:32
+-keepclassmembers class * { *** goToOCR(...); }
+
+# onClick res/layout/activity_home_page.xml #generated:68
+-keepclassmembers class * { *** goToSettings(...); }
+
+# onClick res/layout/activity_debts.xml #generated:116
+-keepclassmembers class * { *** showDebts(...); }
+
+# onClick res/layout/activity_home_page.xml #generated:86
+-keepclassmembers class * { *** viewExpenses(...); }
+
